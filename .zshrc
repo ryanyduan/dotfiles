@@ -5,6 +5,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/RyanDuan/.oh-my-zsh
 
+#Python3.7
+
 #Go
 export PATH=$PATH:$(go env GOPATH)/bin
 export GOPATH=$HOME/go
@@ -12,24 +14,37 @@ export GOPATH=$HOME/go
 #HyperLedger
 export PATH=$PWD/bin:$PATH
 
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+#Haskell
+export PATH="$HOME/Library/Haskell/bin:$PATH"
 
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
+# Look in ~/$ZSH/themes
+#ZSH_THEME="robbyrussell"
+export ZSH_THEME="spaceship"
+export SPACESHIP_PROMPT_ORDER=(
+  #user          # Username section
+  #host          # Hostname section
+  dir           # Current directory section
+  git           # Git section (git_branch + git_status)
+  exec_time     # Execution time
+  line_sep      # Line break
+  #jobs          # Backgound jobs indicator
+  #char          # Prompt character
+)
+
 plugins=(
   git
   github
   zsh-autosuggestions
 )
 
-source $ZSH/oh-my-zsh.sh
+# Automatically ls after doing cd
+chpwd() {
+  ls
+}
 
 alias vim="nvim"
 
+source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # --files: List files that would be searched but do not search
@@ -41,6 +56,14 @@ export FZF_DEFAULT_OPTS="--preview 'head -100 {}' --reverse --height 40%"
 export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS
 bindkey '^I' $fzf_default_completion
-source ~/.bash_profile
 
 
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+# Add colors to Terminal
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
+
+# Add colors to Terminal
+export CLICOLOR=1
+export LSCOLORS=GxFxCxDxBxegedabagaced
