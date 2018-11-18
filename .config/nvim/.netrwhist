@@ -1,11 +1,3 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/RyanDuan/google-cloud-sdk'
-let g:netrw_dirhist_2='/Users/RyanDuan/Projects/Environments/blockchain_env'
-let g:netrw_dirhist_3='/Users/RyanDuan/dotfiles'
-let g:netrw_dirhist_4='/Users/RyanDuan/Projects/Pay_Bills'
-let g:netrw_dirhist_5='/Users/RyanDuan/Projects/Environments/Scrape/articles'
-let g:netrw_dirhist_6='/Users/RyanDuan/Projects/Environments/Project/Project'
-let g:netrw_dirhist_7='/Users/RyanDuan/Projects/Environments/Project/Project/templates'
-let g:netrw_dirhist_8='/Users/RyanDuan/Projects/Environments/Project/Project'
-let g:netrw_dirhist_9='/Users/RyanDuan/Hyperledger-Fabric/fabric-samples/ryan/crypto-config'
+let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_1='/Users/RyanDuan/dotfiles'
