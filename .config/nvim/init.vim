@@ -1,5 +1,5 @@
 """PLUGINS """
-call plug#begin()
+call plug#begin('~/.config/nvim/plugged')
 Plug 'sheerun/vim-polyglot'                "Better syntax highlighting
 Plug 'itchyny/lightline.vim'                "Powerline (lighter version)
 Plug 'airblade/vim-gitgutter'               "Git additions and removals
@@ -8,7 +8,6 @@ Plug 'tpope/vim-fugitive'                   "Git wrapper for vim
 Plug 'zchee/deoplete-jedi'
 Plug 'carlitux/deoplete-ternjs', { 'for': 'js', 'do': 'npm install -g tern' }
 Plug 'chriskempson/base16-vim'
-Plug 'christoomey/vim-tmux-navigator'       "Vim-Tmux navigation
 Plug '/usr/local/opt/fzf'                   "Fuzzy finder
 Plug 'junegunn/fzf.vim'                     "fzf vim funcs
 if has('nvim')
